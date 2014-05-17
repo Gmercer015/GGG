@@ -1,0 +1,20 @@
+INSTRUCTIONS: \n
+The goal of the game is to shoot your opponent with \n
+your 'H' Gun. Each player is given 3 moves per turn \n
+to either move or shoot. The 'G's are the unbreakable \n
+tiles that limit the map. the character'#' represents a \n
+barrier. these barriers can block one beam of your H's \n
+before melting into a '^', which acts as nothing. NOTE \n
+that this map can be edited using the notepad file MAP, \n
+feel free to create your own map using the symbols provided \n
+on the default map. \n \n Things to note:
+shooting DOES count as a turn. \n
+The 'B' represents playerone while the \n
+'O' represents player two \n
+The menu system may be a little glitchy \n
+You can edit the map inside the main folder \n \n \n
+
+feel free to contact me about suggesstions and \n 
+ideas for the game! \n \n
+
+PRESS S TO CONTINUE \n

@@ -1,0 +1,5 @@
+CREDITS	\n
+Project compiled using Code::Blocks IDE/Compiler \n
+Artwork by Chris/ASCII artists \n
+Hard coded in c++ by Grant A. Mercer \n \n
+PRESS S TO CONTINUE: 
