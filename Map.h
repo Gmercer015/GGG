@@ -1,14 +1,15 @@
 #ifndef MAP_H
 #define MAP_H
-#include <string>
 #include "Map.h"
 #include "Player.h"
+#include <string>
 #include <vector>
+
 class Map
 {
     public:
-        void createmap() ;
-        void InputChoice(int pN); //pN(Player Number)
+        void createmap();
+        void InputChoice(int pN); // pN(Player Number)
         Map(int noP); //number of PLAYERS
         void SSP(); //SET START POSITION
         void RefreshScreen(); //reprint array
@@ -26,4 +27,5 @@ class Map
         Player ptObj;
         bool game;
 };
+
 #endif // MAP_H

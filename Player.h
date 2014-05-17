@@ -1,7 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 #include "Map.h"
-#include <iostream>
+
 class Map;
 class Player //not much in this class, work in progress
 {

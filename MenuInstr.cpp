@@ -1,35 +1,41 @@
 #include <iostream>
-#include <string.h>
+#include <string>
 #include <fstream>
-///Extern functions to save file space, MessageNameSpace became to large of a file
+#include <vector>
+#include <iterator>
+
+/// Extern functions to save file space, MessageNameSpace became to large of a file
+
 void Instructions()
 {
-    std::string Temp;
-    using namespace std;
-    ifstream Instr("Instructions.txt");
-    cout << " ";
-    while(Instr >> Temp){
-        if(Temp == "\\n") //if the reader finds a newline character
-        {
-            Temp = "\n"; //replace it with a new newline char(does not work alone when read in)
-        }
-        cout << Temp << " "; //print out each word plus a space
-        }
-    Instr.close(); //close file to prevent leaks
+    std::ifstream Instr("Instructions.txt");
+    
+    std::vector<std::string> tokens;
+    std::istream_iterator<std::string> it(Instr), end;
+
+    std::for_each(it, end, [&] (const std::string& str)
+    {
+        std::cout << str << " ";
+        if (str == "\\n")
+            tokens.push_back("\n");
+        else
+            tokens.push_back(str);
+    });
 };
 
 void Credits()
 {
-    std::string Temp;
-    using namespace std;
-    ifstream Credit("Credits.txt");
-    cout << " ";
-    while(Credit >> Temp){
-        if(Temp == "\\n")
-        {
-            Temp = "\n";
-        }
-        cout << Temp << " ";
-        }
-    Credit.close(); //close file to prevent leaks
+    std::ifstream credit("Credits.txt");
+    
+    std::vector<std::string> tokens;
+    std::istream_iterator<std::string> it(credit), end;
+
+    std::for_each(it, end, [&] (const std::string& str)
+    {
+        std::cout << str << " ";
+        if (str == "\\n")
+            tokens.push_back("\n");
+        else
+            tokens.push_back(str);
+    });
 };

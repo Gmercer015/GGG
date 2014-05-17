@@ -1,13 +1,16 @@
+#include "MessageNameSpace.h"
+
 #include <iostream>
+#include <string>
+#include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
-#include "MessageNameSpace.h"
 #include <stdio.h>
-#include <string>
 #include <conio.h>
+
 extern void Instructions();
 extern void Credits();
+
 namespace Message
 {
     struct Cords
