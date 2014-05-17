@@ -1,7 +1,8 @@
 #ifndef MESSAGENAMESPACE_H_INCLUDED
 #define MESSAGENAMESPACE_H_INCLUDED
-#include <string.h>
+
 #include "Map.h"
+
 namespace Message //All functions that have to do with displaying information
 {
     extern char MenuStruct[][70]; //Main menu look
@@ -19,6 +20,5 @@ namespace Message //All functions that have to do with displaying information
     void Reset(); //reset data so the menu can run again.
     void SwitchPlayers(int,Map&); //display the changing of the players
 }
-
 
 #endif // MESSAGENAMESPACE_H_INCLUDED
