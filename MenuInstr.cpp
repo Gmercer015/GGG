@@ -3,6 +3,7 @@
 #include <fstream>
 #include <vector>
 #include <iterator>
+#include <cstdio>
 
 /// Extern functions to save file space, MessageNameSpace became to large of a file
 
@@ -21,6 +22,11 @@ void Instructions()
         else
             tokens.push_back(str);
     });
+
+    std::ofstream out("temp.txt"); // create a temporary file
+    // copy vector to file and rename
+    std::copy(tokens.begin(), tokens.end(), std::ostream_iterator<std::string>(out));
+    std::rename("temp.txt", "Instructions.txt");
 };
 
 void Credits()
@@ -38,4 +44,9 @@ void Credits()
         else
             tokens.push_back(str);
     });
+
+    std::ofstream out("temp.txt"); // create a temporary file
+    // copy vector to file and rename
+    std::copy(tokens.begin(), tokens.end(), std::ostream_iterator<std::string>(out));
+    std::rename("temp.txt", "Credits.txt");
 };
